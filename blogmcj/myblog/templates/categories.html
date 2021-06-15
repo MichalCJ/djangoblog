@@ -31,7 +31,7 @@
 
 
         </small><br/>
-        {{ post.body | slice:":200" }}
+        {{ post.body | safe | slice:":200" }}
     </li>
     {% endfor %}
 
